@@ -1,0 +1,11 @@
+---
+- hosts: ALL_SERVERS
+  vars:
+    username: user79
+    group1: adm
+  tasks:
+
+  - name: add user user79 to group adm
+    command: /usr/bin/gpasswd -a {{username}} {{group1}}
+    sudo: yes
+
