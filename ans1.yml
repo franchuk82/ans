@@ -1,5 +1,5 @@
 ---
-- hosts: ALL_SERVERS
+- hosts: ans-client
   vars:
     username: user79
     group1: adm
